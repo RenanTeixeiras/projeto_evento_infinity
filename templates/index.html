@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+    <form action="{{url_for('index')}}" method="POST">
+        <input type="text" name="nome" id="nome" placeholder="NOME DO SUSPEITO: ">
+        <div id="pergunta">
+            <label>TELEFONOU PARA A VÍTIMA RECENTEMENTE?</label> <br><br>
+            <input type="checkbox" id="checkbox" name="telefonou"  VALUE='S'> SIM
+            <input type="checkbox" id="checkbox" name="telefonou"  VALUE='N'> NÃO
+        </div>
+
+        <div id="pergunta">
+            <label>ESTEVE NO LOCAL DO CRIME?</label> <br><br>
+            <input type="checkbox" id="checkbox" name="esteve"  VALUE='S'> SIM
+            <input type="checkbox" id="checkbox" name="esteve"  VALUE='N'> NÃO
+        </div>
+
+        <div id="pergunta">
+            <label>MORA PERTO DA VÍTIMA?</label> <br><br>
+            <input type="checkbox" id="checkbox" name="mora"  VALUE='S'> SIM
+            <input type="checkbox" id="checkbox" name="mora"  VALUE='N'> NÃO
+        </div>
+        
+        <div id="pergunta">
+            <label>DEVIA PARA A VÍTIMA?</label> <br><br>
+            <input type="checkbox" id="checkbox" name="devia"  VALUE='S'> SIM
+            <input type="checkbox" id="checkbox" name="devia"  VALUE='N'> NÃO
+        </div>
+        
+        <div id="pergunta">
+            <label>JÁ TRABALHOU COM A VÍTIMA?</label> <br><br>
+            <input type="checkbox" id="checkbox" name="trabalhou"  VALUE='S'> SIM
+            <input type="checkbox" id="checkbox" name="trabalhou"  VALUE='N'> NÃO
+        </div>
+        <input type="submit" id="testar" value="TESTAR">
+    </form>
+</body>
+</html>

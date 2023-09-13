@@ -1,0 +1,50 @@
+
+body {
+    background-image: url("https://cdn.pixabay.com/photo/2023/09/02/03/14/fuji-apple-8228073_960_720.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Poppins';font-size: 22px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    padding: 30px;
+    margin-inline: auto;
+    margin-top: 10px;
+    background-color: grey;
+    border-radius: 2cm;
+
+}
+
+#pergunta {
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+#testar {
+    margin-top: 30px;
+    width: 100px;
+    padding: 20px;
+    margin-inline: auto;
+}
+
+#nome {
+    margin-top: 30px;
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid ;
+    outline: 0;
+    font-size: 1.3rem;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+
+#checkbox {
+    border: 2px solid #f2f2f2; 
+    margin-left: 20px;
+}
